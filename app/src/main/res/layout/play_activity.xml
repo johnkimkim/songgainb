@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:text="다음곡이 자동으로 재생됩니다"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#E6E5E5"
+        android:textSize="20dp"/>
+
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:layout_below="@+id/title_text"
+        android:id="@+id/playView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showYouTubeButton="false"/>
+
+<!--    <ListView-->
+<!--        android:id="@+id/play_activity_listview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/control"-->
+<!--        android:layout_below="@+id/playView"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:divider="#929294"-->
+<!--        android:dividerHeight="1dp" />-->
+
+    <LinearLayout
+        android:layout_below="@+id/playView"
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/setEnabled"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageButton
+            android:id="@+id/provbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/prev_enabled_false"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/stop_and_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/stop_false"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/nextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/next_enabled_false"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+<!--        <TextView-->
+<!--            android:id="@+id/prov_text"-->
+<!--            android:text="이전곡"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <Button
+            android:id="@+id/backbtn"
+            android:background="@drawable/cancel"
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/다음곡"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:text="다음곡" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_1"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="신청곡 요청" />
+        <item
+            android:id="@+id/nav_2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="응원하기(평점)" />
+<!--        <item-->
+<!--            android:id="@+id/nav_3"-->
+<!--            android:icon="@drawable/ic_menu_manage"-->
+<!--            android:title="환경설정" />-->
+    </group>
+
+    <item android:title="↓아래 버튼을 눌러 노래를 공유하세요!↓">
+        <menu>
+            <item
+                android:id="@+id/nav_4"
+                android:icon="@drawable/ic_menu_share"
+                android:title="공유하기" />
+        </menu>
+    </item>
+
+</menu>

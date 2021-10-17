@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">나훈아 노래모음</string>
+    <string name="app_name_main">나훈아 무료듣기</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="ads_id">ca-app-pub-4304457330328945~2882430356</string>
+    <string name="ads_id_test">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ads_banner_id">ca-app-pub-4304457330328945/3065977771</string>
+    <string name="ads_banner_test">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
